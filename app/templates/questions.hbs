@@ -3,7 +3,9 @@
 
 <ul>
   {{#each question in model}}
-    <li>{{#link-to 'question' question.id}}{{question.questionTitle}}{{/link-to}} by {{question.author}}</li>
+    <li>{{#link-to 'question' question.id}}{{question.questionTitle}}{{/link-to}}
+    <br>by {{question.author}} &nbsp;&nbsp;<span class="answer-date">Posted: {{question.date}}</span></li>
+    <hr>
   {{/each}}
 </ul>
 

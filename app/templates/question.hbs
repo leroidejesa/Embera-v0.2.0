@@ -20,6 +20,8 @@
   <h4><strong>{{model.questionTitle}}</strong></h4>
   <h6>by {{model.author}}</h6>
   <p>{{model.description}}</p>
+  <span class="answer-date">Posted: {{model.date}}</span>
+  <br><br>
 
   <button class="btn btn-xs blue-btn" {{action 'edit'}}>Edit</button>
 {{/if}}
