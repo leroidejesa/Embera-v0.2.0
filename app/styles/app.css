@@ -1,0 +1,110 @@
+.nav {
+  padding-top: 5px;
+}
+
+.control-group {
+  padding-right: 14px;
+  padding-left: 10px;
+  padding-bottom: 0px;
+  padding-top: 8px;
+}
+
+#logo {
+  font-weight: bold;
+  font-size: 2em;
+  font-family: 'Cherry Swash', cursive;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  color: #990000;
+}
+
+#e {
+  font-weight:bold;
+  font-size: 2.5em;
+  font-family: 'Cherry Swash', cursive;
+  color: #990000;
+}
+
+.blue-btn {
+  background: #003399;
+  color: #FFFFFF;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.delete-btn {
+  background: #990000;
+  color: #FFFFFF;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.delete-btn:hover {
+  background: #7A0000;
+  color: #FFFFFF;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.blue-btn:hover {
+  background: #002E8A;
+  color: #FFFFFF;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.question-btn {
+  background: #990000;
+  color: #FFFFFF;
+  font-family: 'Martel', serif;
+}
+
+.question-btn:visited {
+  background: #990000;
+  color: #FFFFFF;
+  font-family: 'Martel', serif;
+}
+
+.question-btn:hover {
+  background: #7A0000;
+  color: #FFFFFF;
+  font-family: 'Martel', serif;
+}
+
+.success-btn {
+  background: #197519;
+  color: #FFFFFF;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.success-btn:visited {
+  background: #197519;
+  color: #FFFFFF;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.success-btn:hover {
+  background: #006600;
+  color: #FFFFFF;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#everything-else {
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 70px;
+  margin-top: 50px;
+  margin-right: 310px;
+}
+
+#bottom {
+  margin-top: 150px;
+  position: fixed;
+  top: 400px;
+  /*right: 5px;*/
+  font-weight: normal;
+  font-size: .7em;
+  color: grey;
+  font-family: 'Martel', serif;
+}
+
+.emberfire {
+  max-width: 23px;
+}

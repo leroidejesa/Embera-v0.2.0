@@ -3,8 +3,8 @@
 {{#if isEditing}}
   <form>
     <div class="form-group">
-      <label for="question-title">Question Title</label>
-      {{input value=question-title id="question-title" class="form-control"}}
+      <label for="questionTitle">Question Title</label>
+      {{input value=questionTitle id="questionTitle" class="form-control"}}
     </div>
 
     <div class="form-group">
@@ -12,14 +12,14 @@
       {{textarea value=description id="description" class="form-control" rows="15"}}
     </div>
 
-    <button class="btn blue-btn" {{action 'save'}}>Save</button>
+    <button class="btn blue-btn" {{action 'doneEditing'}}>Save</button>
     <button class="btn delete-btn" {{action 'delete'}}>Delete</button>
   </form>
 
 {{else}}
-  <h4><strong>{{questionTitle}}</strong></h4>
-  <h6>by {{author}}</h6>
-  <p>{{description}}</p>
+  <h4><strong>{{model.questionTitle}}</strong></h4>
+  <h6>by {{model.author}}</h6>
+  <p>{{model.description}}</p>
 
   <button class="btn btn-xs blue-btn" {{action 'edit'}}>Edit</button>
 {{/if}}
@@ -27,7 +27,7 @@
 {{outlet}}
 <h4><strong>Answers</strong></h4>
 
-{{#each answer in answers itemController="answer"}}
+{{#each answer in model.answers}}
   <p>
     {{answer.text}}
     <button class="btn btn-xs delete-btn" {{action 'delete'}}>delete</button>
