@@ -27,10 +27,9 @@
 {{outlet}}
 <h4><strong>Answers</strong></h4>
 
-{{#each answer in model.answers}}
+{{#each answers}}
   <p>
-    {{answer.text}}
-    <button class="btn btn-xs delete-btn" {{action 'delete'}}>delete</button>
+    {{text}}
   </p>
 {{/each}}
 <hr>
