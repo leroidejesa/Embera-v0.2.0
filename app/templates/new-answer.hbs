@@ -1,0 +1,10 @@
+<h4><strong>Add an answer:</strong></h4>
+
+<form>
+  <div class="form-group">
+    <label for="text">What do you think?</label>
+    {{textarea value=text id="text" class="form-control" rows="5"}}
+  </div>
+
+  <button class="btn btn-xs blue-btn" {{action "save"}}>Submit</button>
+</form>

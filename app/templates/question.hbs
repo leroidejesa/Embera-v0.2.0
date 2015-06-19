@@ -1,0 +1,37 @@
+<h1>{{question}}</h1>
+
+{{#if isEditing}}
+  <form>
+    <div class="form-group">
+      <label for="question-title">Question Title</label>
+      {{input value=question-title id="question-title" class="form-control"}}
+    </div>
+
+    <div class="form-group">
+      <label for="description">Description</label>
+      {{textarea value=description id="description" class="form-control" rows="15"}}
+    </div>
+
+    <button class="btn blue-btn" {{action 'save'}}>Save</button>
+    <button class="btn delete-btn" {{action 'delete'}}>Delete</button>
+  </form>
+
+{{else}}
+  <h4><strong>{{questionTitle}}</strong></h4>
+  <h6>by {{author}}</h6>
+  <p>{{description}}</p>
+
+  <button class="btn btn-xs blue-btn" {{action 'edit'}}>Edit</button>
+{{/if}}
+<hr>
+{{outlet}}
+<h4><strong>Answers</strong></h4>
+
+{{#each answer in answers itemController="answer"}}
+  <p>
+    {{answer.text}}
+    <button class="btn btn-xs delete-btn" {{action 'delete'}}>delete</button>
+  </p>
+{{/each}}
+<hr>
+<p>{{#link-to 'new-answer' this class="btn success-btn"}}Add a new answer{{/link-to}}</p>

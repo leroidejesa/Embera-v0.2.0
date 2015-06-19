@@ -1,0 +1,18 @@
+<form>
+  <div class="form-group">
+    <label for="question-title">Write your question:</label>
+    {{input value=question-title id="question-title" class="form-control"}}
+  </div>
+
+  <div class="form-group">
+    <label for="description">Add some details:</label>
+    {{textarea value=description id="description" class="form-control" rows="15"}}
+  </div>
+
+  <div class="form-group">
+    <label for="author">What's your name?</label>
+    {{input value=author id="author" class="form-control"}}
+  </div>
+
+  <button class="btn blue-btn" {{action 'save'}}>Submit</button>
+</form>

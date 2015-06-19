@@ -1,0 +1,19 @@
+
+<h3>Recent Questions</h3>
+
+<ul>
+  {{#each question in model}}
+    <li>{{#link-to 'question' question}}{{question.questionTitle}}{{/link-to}} by {{question.author}}</li>
+  {{/each}}
+</ul>
+
+
+
+
+
+<div id="bottom">
+<hr>
+<a href="http://github.com/leroidejesa" class="btn-sm question-btn">Contact Us</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet. Case malis nobis vis eu. Eam saepe mei comprehensam.
+&nbsp;&nbsp;&nbsp;<img src="http://i.imgur.com/Ws10o9F.png" class="emberfire">
+</div>

@@ -1,3 +1,25 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<div class='container'>
+  <nav class='navbar navbar-default' role='navigation'>
 
-{{outlet}}
+    <ul class='nav navbar-nav'>
+      <li>{{#link-to 'questions'}}<span id="e">E</span><span id="logo">mbera</span>{{/link-to}}</li>
+
+      <li><form class="navbar-form" role="search">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search (coming soon!)" name="srch-term" id="srch-term">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+          </div>
+        </div>
+      </form></li>
+
+      <li><div class="control-group">{{#link-to 'questions' class="btn btn-default"}}Recent Questions{{/link-to}}</div></li>
+      <li><div class="control-group">{{#link-to 'new-question' class="btn question-btn"}}New Question{{/link-to}}</div></li>
+
+    </ul>
+  </nav>
+
+  <div id="everything-else">
+    {{outlet}}
+  </div>
+</div>
