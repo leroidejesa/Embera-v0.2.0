@@ -1,11 +1,15 @@
 
-<h3>Recent Questions</h3>
+<div class="page-title">
+  <h3>Recent Questions</h3>
+</div>
 
 <ul>
   {{#each question in model}}
-    <li>{{#link-to 'question' question.id}}{{question.questionTitle}}{{/link-to}}
-    <br>by {{question.author}} &nbsp;&nbsp;<span class="answer-date">Posted: {{question.date}}</span></li>
-    <hr>
+  <div class="each-question">
+    {{#link-to 'question' question.id}}{{question.questionTitle}}{{/link-to}}
+    <br>by {{question.author}} &nbsp;&nbsp;<span class="answer-date">Posted: {{question.date}}</span>
+  </div>
+  <br>
   {{/each}}
 </ul>
 

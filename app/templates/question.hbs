@@ -17,6 +17,8 @@
   </form>
 
 {{else}}
+<div class="each-question">
+
   <h4><strong>{{model.questionTitle}}</strong></h4>
   <h6>by {{model.author}}</h6>
   <p>{{model.description}}</p>
@@ -24,6 +26,7 @@
   <br><br>
 
   <button class="btn btn-xs blue-btn" {{action 'edit'}}>Edit</button>
+</div>
 {{/if}}
 <hr>
 {{outlet}}
