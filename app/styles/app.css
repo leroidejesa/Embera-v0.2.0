@@ -108,3 +108,8 @@
 .emberfire {
   max-width: 23px;
 }
+
+.answer-date {
+  font-size: .6em;
+  opacity: 0.4;
+}

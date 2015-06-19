@@ -2,9 +2,13 @@
 
 <form>
   <div class="form-group">
-    <label for="text">What do you think?</label>
-    {{textarea value=text id="text" class="form-control" rows="5"}}
+    <label for="user"></label>
+    {{input value=user id="user" class="form-control" rows="1" placeholder="Username:"}}
   </div>
-
+  <div class="form-group">
+    <label for="text"></label>
+    {{textarea value=text id="text" class="form-control" rows="5" placeholder="What do you think?"}}
+  </div>
+  <br>
   <button class="btn btn-xs blue-btn" {{action "save"}}>Submit</button>
 </form>
