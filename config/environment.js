@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'embera-cli',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
+    firebase: 'https://embera.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
