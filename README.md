@@ -1,6 +1,8 @@
 # Embera
 by Leroi Dejesa
 
+<img src="http://i.imgur.com/Y4wbWK2.png">
+
 ## Description
 A Quora-style Q&A app authored in `Ember-CLI`
 
