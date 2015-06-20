@@ -69,6 +69,51 @@
   font-family: 'Martel', serif;
 }
 
+
+.nvlink {
+  padding-top: 15.49px;
+  padding-right: 8px;
+  color: #7A7A7A;
+  font-family: 'Martel', serif;
+}
+
+.nvlink:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: #CCCCCC;
+  font-family: 'Martel', serif;
+}
+.nvlink:focus {
+  outline: none;
+  box-shadow: none;
+  border:2px solid transparent;
+}
+
+a {
+  color: #7094B8;
+  font-family: 'Martel', serif;
+}
+
+a:visited {
+  text-decoration: none;
+  background: #F0F0F0;
+  color: #7094B8;
+  font-family: 'Martel', serif;
+}
+
+a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: #CCCCCC;
+  font-family: 'Martel', serif;
+}
+a:focus {
+  outline: none;
+  text-decoration: none;
+  box-shadow: none;
+  /*border:2px solid transparent;*/
+}
+
 .success-btn {
   background: #197519;
   color: #FFFFFF;
@@ -138,4 +183,12 @@
 .page-title {
   opacity: 0.8;
   padding-bottom: 15px;
+}
+
+.btn-default:active, .btn-primary:focus, .open {
+  background-color: white;
+}
+
+.point {
+  opacity: 0.6;
 }
